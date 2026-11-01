@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Weekly Showcase</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="cur" id="cur"></div>
+<div class="toast" id="toast"></div>
+
+<header class="top">
+  <a href="#home" id="brand"></a>
+  <nav><a href="#vote">Vote</a><a href="#showcase">Showcase →</a><span id="auth"></span></nav>
+</header>
+
+<div id="home">
+  <div class="hero">
+    <h1>Made by<br>the <span class="serif">many,</span><br>chosen by all.</h1>
+    <div class="row">
+      <p>Everything posted in our #art channel lands here. Vote for your favorites. Every Sunday the top three enter the showcase.</p>
+      <div class="count"><div><b id="cP">0</b><small>pieces</small></div><div><b id="cV">0</b><small>votes</small></div><div><b id="cT">–</b><small>to close</small></div></div>
+    </div>
+  </div>
+
+  <div class="marq"><div id="mq"></div></div>
+
+  <section id="vote">
+    <div class="label rv"><h2>This week’s <span class="serif">wall</span></h2><span>Spend up to 3 votes. Tap a piece to cast one.</span></div>
+    <div class="wall" id="wall"></div>
+  </section>
+
+  <section id="show">
+    <div class="label rv"><h2>Leading <span class="serif">now</span></h2><a href="#showcase">Full showcase →</a></div>
+    <div id="wins"></div>
+  </section>
+
+  <section id="past">
+    <div class="label rv"><h2>Hall of <span class="serif">fame</span></h2><a href="#showcase">All showcases →</a></div>
+    <div class="arch" id="arch"></div>
+  </section>
+
+  <footer>
+    <a class="cta" href="#" id="join" target="_blank" rel="noopener">Join the<br><span class="serif">server</span> ↗</a>
+    <p>Posting in #art is all it takes to enter.</p>
+  </footer>
+</div>
+
+<div id="showpage" hidden>
+  <div class="sp-hero">
+    <a class="back" href="#home">← Back to the wall</a>
+    <h1>The <span class="serif">showcase</span></h1>
+    <p>The three pieces our community loved most, every single week.</p>
+    <div class="weeks" id="weeks"></div>
+  </div>
+  <div class="sb" id="spBody"></div>
+  <footer><a class="cta" href="#home">Vote for<br><span class="serif">next week</span> ↗</a></footer>
+</div>
+
+<div class="dock"><span>Your votes</span><span class="dots" id="dots"></span></div>
+<script src="/app.js"></script>
+</body>
+</html>
